@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #ededed;
+}
+
+.container {
+    background-color: #fff;
+    color: #4b4c4d;
+    margin: 0;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em 2em;
+
+}
+
+.icons-link a {
+    color: inherit;
+    margin-right: 1em;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    opacity: .75;
+    display: inline-block;
+    padding: .3em;
+    border-radius: 100vw;
+}
+
+.icons-link a:hover {
+    background-color: #ededed;
+}
+
+.icons-link,
+ul {
+    margin-bottom: 1em;
+}
+
+ul a {
+    color: inherit;
+    margin: .5em;
+    font-size: .8rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: #aaa;
+    font-size: .9rem;
+}
+
+@media (min-width: 800px) {
+    .container {
+        height: 50vh;
+    }
+
+    .icons-link a {
+        font-size: 2rem;
+    }
+
+    .icons-link,
+    ul {
+        margin-bottom: 2em;
+    }
+
+    ul a {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
