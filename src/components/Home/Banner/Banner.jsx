@@ -7,7 +7,7 @@ function Banner() {
       <div className="banner-content">
         <h1>Welcome to Innosight Solution</h1>
         <p>Your trusted partner in business</p>
-        <button className="btn btn-primary">Learn More</button>
+        <button className="btn btn-primary"><a href="/about" style={{color:"white",textDecoration:'none'}}>Learn More</a></button>
       </div>
     </div>
   );

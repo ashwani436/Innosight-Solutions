@@ -11,13 +11,13 @@ const Footer = () => {
           <h2>Contact Us</h2>
         </div>
         <div className="social-icons">
-          <a href="#" className="icon">
+          <a href="https://www.facebook.com/" className="icon">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
-          <a href="#" className="icon">
+          <a href="https://twitter.com/i/flow/login" className="icon">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <a href="#" className="icon">
+          <a href="https://www.instagram.com/" className="icon">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>
