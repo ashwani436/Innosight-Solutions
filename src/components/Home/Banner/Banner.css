@@ -1,16 +1,62 @@
-/* Banner.css */
-.banner {
-    background-color: #3498db;
-    color: #ffffff;
-    padding: 20px;
+/* Banner Container Styles */
+.banner-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-image: url("../../assets/img2.jpg");
+    background-size: cover;
+    background-position: center;
     text-align: center;
+    color: #fff;
+    padding: 100px 0;
+    position: relative;
 }
 
-.banner h1 {
+/* Banner Content Styles */
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+h1 {
     font-size: 36px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.banner p {
+/* Paragraph Styles */
+p {
     font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Button Styles */
+.btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+
+    /* Adjust styles for smaller screens */
+    .banner-content {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
 }

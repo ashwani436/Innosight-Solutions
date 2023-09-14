@@ -26,7 +26,7 @@ function Carousl() {
         img4,
         img5,
       ].map((img, index) => (
-        <div key={index} className="carousel-item">
+        <div key={index} className="carousel-item1">
           <img src={img} alt={`Image ${index + 1}`} />
           <div className="carousel-text">
             <span>Innosight</span>

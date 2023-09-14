@@ -1,27 +1,15 @@
 import styled from "styled-components";
-import { Navbar } from "./components/navbar";
-import logo from './components/assets/Innosight.png';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
+// import Navbar
+import Navbar from './components/navbar/index';
 
 const AppContainer = styled.div`
    width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
-
-const LogoStyling = styled.div`
-position: absolute;
-top:5px;
-left:5px;
-border-radius: 100px;
-.logo{
-  width:150px;
-  height: 100px;
-  border-radius: 50px;
-}
 `;
 
 
@@ -33,10 +21,8 @@ function App() {
 
       {/* Common Header */}
          <AppContainer>
-      <Navbar />
-       <LogoStyling>
-        <img className="logo" src={logo} alt="logo" />
-        </LogoStyling>
+          <Navbar />
+
          </AppContainer>
         <Routes>
          <Route path="/" element={<Home />} />

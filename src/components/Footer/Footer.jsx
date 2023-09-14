@@ -1,40 +1,32 @@
 import React from 'react'
 import '../Footer/Footer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-function Footer() {
+const Footer = () => {
   return (
-    
-
-    <footer>
-      <div class="container">
-
-        <div class="icons-link">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-snapchat"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
+    <footer className="footer">
+      <div className="container">
+        <div className="footer-header">
+          <h2>Contact Us</h2>
         </div>
-
-        <ul>
-        <a href="/">Home</a>
-        <a href="#">Services</a>
-        <a href="#">About</a>
-        <a href="#">Terms</a>
-        <a href="#">Privacy Policy</a>
-        </ul>
-
-
-        <p>Footer @ 2021</p>
-      
-      
-      
-      
-      
+        <div className="social-icons">
+          <a href="#" className="icon">
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a href="#" className="icon">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a href="#" className="icon">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+        </div>
+        <p className="footer-text">
+          © {new Date().getFullYear()} Innosight Solution. All rights reserved.
+        </p>
       </div>
     </footer>
+  );
+};
 
-
-  )
-}
-
-export default Footer
+export default Footer;
