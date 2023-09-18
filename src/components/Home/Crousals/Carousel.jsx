@@ -29,8 +29,9 @@ function Carousl() {
         <div key={index} className="carousel-item1">
           <img src={img} alt={`Image ${index + 1}`} />
           <div className="carousel-text">
-            <span>Innosight</span>
-            <span>Solution</span>
+            <span>Innovative</span>
+            <span>Asset</span>
+            <span>Solutions!</span>
           </div>
         </div>
       ))}

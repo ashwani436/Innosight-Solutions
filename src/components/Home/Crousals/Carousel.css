@@ -1,6 +1,6 @@
 /* In your component's stylesheet or a separate CSS file */
 .carousel-item1 {
-    margin-top: 50px;
+    margin-top: 100px;
     position: relative;
     text-align: center;
     /* overflow: hidden; */
@@ -17,9 +17,9 @@
 }
 
 .carousel-item1:hover img{
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     /* Increase image size on hover */
-    transition: transform 0.3s ease-in-out;
+    /* transition: transform 0.3s ease-in-out; */
     cursor: pointer;
 }
 
