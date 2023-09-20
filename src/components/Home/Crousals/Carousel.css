@@ -1,6 +1,9 @@
 /* In your component's stylesheet or a separate CSS file */
+.carousel-root{
+    background-color: black;
+}
 .carousel-item1 {
-    margin-top: 100px;
+    margin-top: 70px;
     position: relative;
     text-align: center;
     /* overflow: hidden; */

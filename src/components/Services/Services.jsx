@@ -2,6 +2,7 @@ import React from 'react'
 import ServiceCard from './ServiceCard';
 import img from '../assets/img1.jpg';
 import projectData from '../Projects/projectData';
+import serviceData from './ServiceData';
 
 function Services(props) {
   return (
@@ -13,9 +14,9 @@ function Services(props) {
           <div className="col-10 mx-auto">
             <div className="row gy-4">
              {
-               projectData.map((val)=>{
+               serviceData.map((val)=>{
                  return(
-                   <ServiceCard key={val.id} imgsrc={val.image} title={val.bannerText} squareFeet={val.squarefeet} bedroom={val.bedrooms} />
+                   <ServiceCard key={val.id} imgsrc={val.image} title={val.bannerText} path={val.path}/>
                  )
                })
              }

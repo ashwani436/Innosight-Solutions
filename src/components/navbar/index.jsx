@@ -33,14 +33,19 @@ function NavMenu() {
            <li className="nav-item dropdown">
               <a href="#">Services</a>
               <ul className="dropdown-menu">
-                <li><a href="/residential-services">Residential Services</a></li>
-                <li><a href="/commercial-services">Commercial Services</a></li>
-                <li><a href="/retail-services">Retail Services</a></li>
+                <li><a href="/services/residential-services">Residential Services</a></li>
+                <li><a href="/services/commercial-services">Commercial Services</a></li>
+                <li><a href="/services/retail-services">Retail Services</a></li>
               </ul>
             </li>
-          <a href="/projects">
-            <li>Projects</li>
-          </a>
+          <li className="nav-item dropdown">
+            
+              <a href="#">Projects</a>
+              <ul className="dropdown-menu">
+                <li><a href="/projects/residential-projects">Residential Projects</a></li>
+                <li><a href="/projects/commercial-projects">Commercial Projects</a></li>
+              </ul>
+            </li>
           <a href="#">
             <li>Contact</li>
           </a>

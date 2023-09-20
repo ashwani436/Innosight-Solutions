@@ -1,94 +1,75 @@
 import React from 'react';
-import Card from './Card'; // Assuming you have a Card component
-// import './YourComponent.css'; // Import your custom CSS for advanced styling
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import Carousel CSS
-import { Carousel } from 'react-responsive-carousel';
+import Card from './Card';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import projectData from './projectData';
 import styled from 'styled-components';
-
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const ArrowStyling = styled.div`
-.custom-arrow {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 24px;
-  font-weight: 600;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.react-multiple-carousel__arrow--left {
+  left:60px !important;
+  position: fixed;
   z-index: 2;
-  color: #f56565; 
-  border:2px solid black
 }
+.react-multiple-carousel__arrow--right {
 
-.custom-arrow-left {
-  left: 10px; 
-}
-
-.custom-arrow-right {
-  right: 10px; 
+  right:60px !important;
+  position:fixed;
+  z-index:2;
 }
 
 `;
 
-
-const CustomArrow = ({ onClick, direction }) => (
-  <ArrowStyling>
-  <button
-    onClick={onClick}
-    className={`custom-arrow custom-arrow-${direction} d-flex`}
-  >
-    {direction === 'left' ? '<' : '>'}
-    </button>
-    </ArrowStyling>
-);
-
 const CommercialProjects = () => {
-  // Split the projectData into chunks of 3 items each
+ 
   const chunkSize = 3;
   const projectChunks = [];
   for (let i = 0; i < projectData.length; i += chunkSize) {
     projectChunks.push(projectData.slice(i, i + chunkSize));
   }
 
+  const responsive = {
+    desktop: { breakpoint: { max: 3000, min: 1024 }, items: 1 },
+    mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
+    tablet: { breakpoint: { max: 1024, min: 464 }, items: 1 }
+  };
+
+
   return (
     <>
-     <div className="residential-projects my-5 p-3" style={{backgroundColor:'#FAEBD7'}}>
+      <div className="residential-projects my-5 p-3" style={{backgroundColor:'#FAEBD7'}}>
         <h3 className="display-5 text-center font-weight-bold">
           COMMERCIAL <span className='text-danger'>PROJECTS</span>
         </h3>
         <div className="container-fluid mb-5 mt-4">
           <div className="row">
             <div className="col-10 mx-auto">
-              <Carousel
-                // autoPlay
-                // interval={5000}
-                showStatus={false}
-                showThumbs
-                infiniteLoop
-                stopOnHover={false}
-                showIndicators={false}
-                renderThumbs={() => { }}
-                 renderArrowPrev={(onClickHandler, hasPrev) =>
-                  hasPrev && (
-                    <CustomArrow onClick={onClickHandler} direction="left" />
-                  )
-                }
-                renderArrowNext={(onClickHandler, hasNext) =>
-                  hasNext && (
-                    <CustomArrow onClick={onClickHandler} direction="right" />
-                  )
-                }
-              >
+              <ArrowStyling>
+            <Carousel
+            responsive={responsive}
+            additionalTransfrom={0}
+            autoPlaySpeed={3000}
+            centerMode={false}
+            draggable
+            focusOnSelect={false}
+            infinite
+            keyBoardControl
+            minimumTouchDrag={80}
+            renderButtonGroupOutside={true}
+            renderDotsOutside={true}
+            slidesToSlide={1}
+            swipeable
+          >
                 {projectChunks.map((chunk, index) => (
                   <div key={index} className="row gy-4">
                     {chunk.map((val) => (
-                      <Card key={val.id} imgsrc={val.image} title={val.bannerText} squareFeet={val.squarefeet} bedroom={val.bedrooms} />
+                     <Card key={val.id} imgsrc={val.image} title={val.bannerText} squareFeet={val.squarefeet} bedroom={val.bedrooms} />
                     ))}
                   </div>
                 ))}
               </Carousel>
+              </ArrowStyling>
             </div>
           </div>
         </div>

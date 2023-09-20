@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import "react-multi-carousel/lib/styles.css";
 import leftarrow from '../assets/mdi-light_chevron-left.svg';
 import rightarrow from '../assets/mdi-light_chevron-right.svg';
-import img from '../assets/img4.jpg'
 
 class Testimonials extends Component {
 
@@ -37,10 +36,11 @@ class Testimonials extends Component {
       <TestimonialWrapper>
       <div id="main-slide" className="carousel slide mt-5 mb-5 " data-ride="carousel">
         <div className="carousel-inner">
-          <Carousel
+            <Carousel
+            autoPlay
             responsive={responsive}
             additionalTransfrom={0}
-            autoPlaySpeed={3000}
+            autoPlaySpeed={5000}
             centerMode={false}
             className=""
             dotListClass=""
@@ -55,175 +55,151 @@ class Testimonials extends Component {
             sliderClass=""
             slidesToSlide={1}
             swipeable
-            customRightArrow={<CustomRight />}
-            customLeftArrow={<CustomLeft />}
-          >
+            // customRightArrow={<CustomRight />}
+            // customLeftArrow={<CustomLeft />}
+            >
             <div className="container mt-5">
               <div className="row">
-                <div className="col-lg-6 col-md-12 col-sm-12">
-                  <div className="col-9 left-image">
-                  
-              <img
-                className="w-100 h-100 float-end mt-4"
-                src={img}
-                alt="First slide"
-              />
-              </div>
-              </div>
-              <div className="col-lg-6 col-md-12 col-sm-12">
+              <div className="col-lg-4 col-md-12 col-sm-12">
               
                 
-             <div className="right-text col-8">
-              <p className="text">Docusieve has helped us achieve: more elegant & crisp work products much better rigorously
-                                  formatted documentation &, as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
+             <div className="right-text col-8 border border-warning p-5">
+              <p className="fs-6">Docusieve has helped us achieve: more elegant
+                                   as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
               
               <div className="author-container mt-5">
                 <p className="author">Siddharth Raja</p>
-                <p className="partner">Partner at Saakshya Law</p>
+                <p className="partner">Partner at Saakshya</p>
                 </div>
               </div>
+                  </div>
+                   
+                  
+              <div className="col-lg-4 col-md-12 col-sm-12">
+              
+                
+            <div className="right-text col-8 border border-warning p-5">
+              <p className="fs-6">Docusieve has helped us achieve: more elegant
+                                   as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
+              
+              <div className="author-container mt-5">
+                <p className="author">Siddharth Raja</p>
+                <p className="partner">Partner at Saakshya</p>
+                </div>
               </div>
-              </div>
+                  </div>
 
-            </div>
-            <div className="container mt-5">
-              <div className="row">
-                <div className="col-lg-6 col-md-12 col-sm-12">
-                <div className="col-9  left-image">
-              <img
-                className="w-100 h-100 float-end mt-4"
-                src={img}
-                alt="Second slide"
-              />
-              </div>
-      
-              </div>
-              <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="right-text col-8">
-              <p className="text ">Mike Docusieve has  <span className="heighligted-text"> reduced my proofreading time</span> from 4-5 hours to an hour or lesser and identifies errors or 
-                                    inconsistency using  AI. It is done in an organised manner & is easy single click navigation. </p>
-               <div className="author-container mt-5">
-                <p className="author">Varun Bhargava</p>
-                <p className="partner">Antares legal </p>
+                        
+              <div className="col-lg-4 col-md-12 col-sm-12">
+              
+                
+             <div className="right-text col-8 border border-warning p-5">
+              <p className="fs-6">Docusieve has helped us achieve: more elegant
+                                   as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
+              
+              <div className="author-container mt-5">
+                <p className="author">Siddharth Raja</p>
+                <p className="partner">Partner at Saakshya</p>
                 </div>
               </div>
               </div>
+            </div>
               </div>
-              </div>
-              <div className="container mt-5">
+              
+               <div className="container mt-5">
               <div className="row">
-                <div className="col-lg-6 col-md-12 col-sm-12">
-                <div className="col-9  left-image">
-              <img
-                className="w-100 h-100 float-end mt-4"
-                src={img}
-                alt="Third slide"
-              />
-              </div>
-              </div>
-              <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="right-text col-8 mb-5">
-              <p className="text">With Mike DocuSieve, the  <span className="heighligted-text">time saved</span> in proofreading each contract and agreement has opened up possibilities for newer mandates, clients and more billable hours. </p>
-               <div className="author-container mt-5">
-                <p className="author">Shyam Pandya</p>
-                <p className="partner">Stratage Law Partner</p>
+              <div className="col-lg-4 col-md-12 col-sm-12">
+              
+                
+            <div className="right-text col-8 border border-warning p-5">
+              <p className="fs-6">Docusieve has helped us achieve: more elegant
+                                   as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
+              
+              <div className="author-container mt-5">
+                <p className="author">Siddharth Raja</p>
+                <p className="partner">Partner at Saakshya</p>
                 </div>
               </div>
-            </div>
-            </div>
-            </div>
+                  </div>
+                   
+                  
+              <div className="col-lg-4 col-md-12 col-sm-12">
+              
+                
+                <div className="right-text col-8 border border-warning p-5">
+              <p className="fs-6">Docusieve has helped us achieve: more elegant
+                                   as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
+              
+              <div className="author-container mt-5">
+                <p className="author">Siddharth Raja</p>
+                <p className="partner">Partner at Saakshya</p>
+                </div>
+              </div>
+                  </div>
 
-            <div className="container mt-5">
-              <div className="row">
-                <div className="col-lg-6 col-md-12 col-sm-12">
-                <div className="col-9  left-image">
-              <img
-                className="w-100 h-100 float-end mt-4"
-                src={img}
-                alt="Third slide"
-              />
-              </div>
-              </div>
-              <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="right-text col-8 mb-5">
-              <p className="text">For someone like myself at partner level, I don’t have to depend on my juniors anymore to review. The tool allows me to run one layer of proofreading, which  <span className="heighligted-text"> captures up to 90% of errors & inconsistencies accurately.</span></p>
-               <div className="author-container mt-5">
-                <p className="author">Akhil Bansal</p>
-                <p className="partner">Transaction Advisory, AARC Partners</p>
+                        
+              <div className="col-lg-4 col-md-12 col-sm-12">
+              
+                
+               <div className="right-text col-8 border border-warning p-5">
+              <p className="fs-6">Docusieve has helped us achieve: more elegant
+                                   as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
+              
+              <div className="author-container mt-5">
+                <p className="author">Siddharth Raja</p>
+                <p className="partner">Partner at Saakshya</p>
                 </div>
               </div>
+              </div>
             </div>
-            </div>
-            </div>
+              </div>
+              
+               <div className="container mt-5">
+              <div className="row">
+              <div className="col-lg-4 col-md-12 col-sm-12">
+              
+               <div className="right-text col-8 border border-warning p-5">
+              <p className="fs-6">Docusieve has helped us achieve: more elegant
+                                   as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
+              
+              <div className="author-container mt-5">
+                <p className="author">Siddharth Raja</p>
+                <p className="partner">Partner at Saakshya</p>
+                </div>
+              </div>
+                  </div>
+                   
+                  
+              <div className="col-lg-4 col-md-12 col-sm-12">
+              
+                
+                <div className="right-text col-8 border border-warning p-5">
+              <p className="fs-6">Docusieve has helped us achieve: more elegant
+                                   as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
+              
+              <div className="author-container mt-5">
+                <p className="author">Siddharth Raja</p>
+                <p className="partner">Partner at Saakshya</p>
+                </div>
+              </div>
+                  </div>
 
-            <div className="container mt-5">
-              <div className="row">
-                <div className="col-lg-6 col-md-12 col-sm-12">
-                <div className="col-9  left-image">
-              <img
-                className="w-100 h-100 float-end mt-4"
-                src={img}
-                alt="Third slide"
-              />
-              </div>
-              </div>
-              <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="right-text col-8 mb-5">
-              <p className="text">In an overcrowded market of LegalTech products there was <span className="heighligted-text"> nothing like Mike DocuSieve, especially an Indian counterpart to it.</span> We found no product that does what this can do.</p>
-               <div className="author-container mt-5">
-                <p className="author">Sonia Gupta</p>
-                <p className="partner">Legal Advisory, AARC Partners</p>
+                        
+              <div className="col-lg-4 col-md-12 col-sm-12">
+              
+                
+                 <div className="right-text col-8 border border-warning p-5">
+              <p className="fs-6">Docusieve has helped us achieve: more elegant
+                                   as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
+              
+              <div className="author-container mt-5">
+                <p className="author">Siddharth Raja</p>
+                <p className="partner">Partner at Saakshya</p>
                 </div>
               </div>
-            </div>
-            </div>
-            </div>
-
-            <div className="container mt-5">
-              <div className="row">
-                <div className="col-lg-6 col-md-12 col-sm-12">
-                <div className="col-9  left-image">
-              <img
-                className="w-100 h-100 float-end mt-4"
-                src={img}
-                alt="Third slide"
-              />
-              </div>
-              </div>
-              <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="right-text col-8 mb-5">
-              <p className="text">We have started our foray into LegalTech with Mikelegal & are extremely happy not just with their product but also the  <span className="heighligted-text"> guidance at each step.</span> Mike DocReview has helped us <span className="heighligted-text"> save time & reduced error margin</span> to negligible levels.</p>
-               <div className="author-container mt-5">
-                <p className="author">Radhika Bali</p>
-                <p className="partner">Managing Partner, JCSS</p>
-                </div>
               </div>
             </div>
-            </div>
-            </div>
-
-            <div className="container mt-5">
-              <div className="row">
-                <div className="col-lg-6 col-md-12 col-sm-12">
-                <div className="col-9  left-image">
-              <img
-                className="w-100 h-100 float-end mt-4"
-                src={img}
-                alt="Third slide"
-              />
-              </div>
-              </div>
-              <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="right-text col-8 mb-5">
-              <p className="text">Mike DocuSieve is a  <span className="heighligted-text"> boon</span> for law forms as it<span className="heighligted-text"> saves our time </span> & helps us proofread the document in the quickest manner.</p>
-               <div className="author-container mt-5">
-                <p className="author">Yash Singh</p>
-                <p className="partner">Sarvaank Associates</p>
-                </div>
-              </div>
-            </div>
-            </div>
-            </div>
+            </div>   
           </Carousel>
         </div>
       </div>
@@ -252,7 +228,7 @@ font-weight: 500;
 font-size: 24px;
   }
   .left {
-    left:250px;
+    left:80px;
   }
   .left-image{
       float:right;

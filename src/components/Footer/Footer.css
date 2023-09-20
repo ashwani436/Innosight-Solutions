@@ -1,38 +1,36 @@
+/* Add this CSS to your stylesheet */
 .footer {
     background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 0px;
+    color: white;
+    padding: 20px 0;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-/* Header styles */
-.footer-header {
-    margin-bottom: 10px;
+.footer-content {
+    flex-grow: 1;
 }
 
 .footer-header h2 {
-    font-size: 24px;
+    margin: 0;
 }
 
-/* Social media icons styles */
 .social-icons {
-    margin-top: 10px;
+    display: flex;
 }
 
 .icon {
-    color: #fff;
-    font-size: 20px;
-    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    margin-left: 15px;
     text-decoration: none;
 }
 
-/* Text style */
 .footer-text {
-    font-size: 14px;
+    margin: 0;
 }

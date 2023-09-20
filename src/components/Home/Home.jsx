@@ -9,6 +9,7 @@ import Association from '../Associations/Association'
 import Teams from '../Teams/Teams'
 import Testimonials from '../Testimonials/Testimonials'
 import Services from '../Services/Services'
+import HomeProjects from '../Projects/HomeProjects'
 
 function Home() {
   return (
@@ -16,8 +17,7 @@ function Home() {
       <Carousl/>
       <Banner />
       <About />
-      <ResidentialProjects />
-      <CommercialProjects />
+      <HomeProjects/>
       <Association />
       <Services/>
       <Testimonials/>

@@ -1,14 +1,19 @@
-import React from 'react'
-import '../Footer/Footer.css';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import '../Footer/Footer.css';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="footer-header">
-          <h2>Contact Us</h2>
+        <div className="footer-content">
+          <div className="footer-header">
+            <h2>Contact Us</h2>
+          </div>
+          <div className="footer-text">
+            © {new Date().getFullYear()} Innosight Solution. All rights reserved.
+          </div>
         </div>
         <div className="social-icons">
           <a href="https://www.facebook.com/" className="icon">
@@ -21,9 +26,6 @@ const Footer = () => {
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>
-        <p className="footer-text">
-          © {new Date().getFullYear()} Innosight Solution. All rights reserved.
-        </p>
       </div>
     </footer>
   );
