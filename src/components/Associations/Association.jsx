@@ -1,20 +1,29 @@
 import React from 'react'
-import facebook from '../assets/association/facebook.png';
-import sup from '../assets/association/super.png';
-import twitter from '../assets/association/twitter.jpg';
-import pngtree from '../assets/association/pngtree.jpg';
 import styled from 'styled-components';
+import dlf from '../assets/association/DLF.jpg'
+import gaurs from '../assets/association/Gaurs.png';
+import godrej from '../assets/association/Godrej_Logo.png';
+import gulshan from '../assets/association/LOGO-Gulshan.jpg';
+import tgroup from '../assets/association/ltgrouplogo.jpg';
+import m3m from '../assets/association/m3m-logo.webp';
+import maxlogo from '../assets/association/max-logo.jpg';
+import tata from '../assets/association/Tata-Motors-Logo.png';
 
 const AssociationStyle = styled.div`
 .marquee {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   overflow: hidden;
 }
 .marquee_content {
   white-space: nowrap;
   animation: marquee 20s linear infinite;
   display: flex;
+}
+
+.marquee_content img {
+  height: 80%;
+  padding:25px
 }
 .marquee_content > div {
   height: 13rem;
@@ -39,28 +48,28 @@ function Association() {
     <div className="marquee">
       <div className="marquee_content">
         <div>
-          <img src={facebook} />
+          <img src={dlf} />
         </div>
         <div>
-          <img src={twitter} />
+          <img src={gaurs} />
         </div>
         <div>
-          <img src={pngtree} />
+          <img src={tata} />
         </div>
         <div>
-        <img src={sup} />
+        <img src={m3m} />
         </div>
         <div>
-          <img src={facebook} />
+          <img src={godrej} />
         </div>
         <div>
-          <img src={twitter} />
+          <img src={gulshan} />
         </div>
         <div>
-          <img src={pngtree} />
+          <img src={tgroup} />
         </div>
         <div>
-        <img src={sup} />
+        <img src={maxlogo} />
         </div>
       </div>
             </div>

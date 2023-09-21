@@ -6,8 +6,8 @@ import serviceData from './ServiceData';
 
 function Services(props) {
   return (
-      <div style={{ marginTop: '150px' }}>
-          <h1 className='d-flex align-items-center justify-content-center text-white'>Our Services</h1>
+      <div style={{ marginTop: '20px' }}>
+          <h1 className='d-flex align-items-center justify-content-center text-weight-bold'>Our Services</h1>
    <>
       <div className="container-fluid mb-5">
         <div className="row">
