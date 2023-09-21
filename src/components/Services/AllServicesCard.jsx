@@ -8,7 +8,7 @@ function AllServicesCard(props) {
   }
 
   return (
-    <div className="col-md-4 col-10 mx-auto">
+    <div className="col-md-4 col-10 mx-auto wow animate__bounceInUp" data-wow-duration="2s">
       <div className="property-card m-2">
         <div className="property-img">
                   <img src={props.imgsrc} alt="Property" />

@@ -11,11 +11,11 @@ function HomeProjects() {
         <div className='container flex-row mb-5'>    
            
      <div className="col-md-4 col-10 mx-auto" style={{marginBottom:'100px'}}>
-      <div className="property-card m-2 bg-white">
+      <div className="property-card m-2 bg-white wow animate__fadeInLeft" data-wow-duration="2s">
         <div className="property-img">
             <img src={img} className='w-100' alt="Property" />    
               </div>
-                        <div className='p-5 px-5'>
+                        <div className='p-5 px-5 '>
                             <h2 className='text-center font-weight-bold'>Residential Projects</h2>
         <Link to="/projects/residential-projects">
         <button className='w-100' style={{height:'45px',backgroundColor:'gray',color:'white',border:'none',outline:'none'}}>SEE MORE</button>
@@ -25,7 +25,7 @@ function HomeProjects() {
       </div>
       
        <div className="col-md-4 col-10 mx-auto" style={{marginBottom:'100px'}}>
-      <div className="property-card m-2 bg-white">
+      <div className="property-card m-2 bg-white wow animate__fadeInLeft" data-wow-duration="2s">
         <div className="property-img">
             <img src={img} alt="Property" />    
               </div>
@@ -40,7 +40,7 @@ function HomeProjects() {
                 
                 
        <div className="col-md-4 col-10 mx-auto" style={{marginBottom:'100px'}}>
-      <div className="property m-2">
+      <div className="property m-2 wow animate__fadeInRight" data-wow-duration="2s">
         <FormContainer>
         <Form action="#" method="POST">
           <Label htmlFor="name">Name:</Label>

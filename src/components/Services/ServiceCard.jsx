@@ -38,7 +38,7 @@ const Button = styled.button`
 
 function ServiceCard(props) {
     return (
-     <div className="col-md-4 col-10">
+     <div className="col-md-4 col-10 wow animate__bounceInUp" data-wow-duration="2s">
       <Link to={props.path}> 
       <PropertyCard>
         <div className="property-img">

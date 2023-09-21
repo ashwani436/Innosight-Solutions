@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect ,useState} from "react";
 import styled from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./components/Home/Home";
@@ -30,12 +30,46 @@ const AppContainer = styled.div`
 
 function App() {
 
-  useEffect(() => {
-    new WOW.WOW({
-      live: false
-    }).init();
-    window.onload = function () { setTimeout(function () { window.scrollTo(0, 1); }, 0); }
-  }, [])
+   const [scrollDirection, setScrollDirection] = useState('down');
+
+  
+useEffect(() => {
+    let wow; // Declare Wow.js instance outside the effect
+    const scrollThreshold = 100; // Adjust the threshold as needed
+
+    const initWow = () => {
+      wow = new WOW.WOW({
+        // Initialize Wow.js with options here, if needed
+      });
+      wow.init();
+    };
+
+    // Initialize Wow.js on component mount
+    initWow();
+
+    // State to track scroll direction (up or down)
+   
+
+    // Function to detect scroll direction
+    const detectScrollDirection = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > scrollThreshold && scrollDirection !== 'down') {
+        setScrollDirection('down');
+      } else if (currentScrollY <= scrollThreshold && scrollDirection !== 'up') {
+        setScrollDirection('up');
+      }
+    };
+
+    // Listen for scroll events to detect scroll direction
+    window.addEventListener('scroll', detectScrollDirection);
+
+    // Clean up event listener when component unmounts
+    return () => {
+      window.removeEventListener('scroll', detectScrollDirection);
+    };
+  }, [scrollDirection]);
+
 
   return (
  

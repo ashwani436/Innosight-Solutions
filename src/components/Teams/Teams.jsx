@@ -9,7 +9,7 @@ function Teams() {
     <h1 className='d-flex align-items-center justify-content-center'>Our Team</h1>
     <div className="row mt-5">
           <div className="col-10 mx-auto">
-            <div className="row gy-4 card-alignment">
+            <div className="row gy-4 card-alignment wow animate__fadeInDownBig" data-wow-duration="2s">
               {
                 Data.map((val,index)=>{
                   return (
