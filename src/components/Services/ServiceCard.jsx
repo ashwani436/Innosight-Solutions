@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const PropertyCard = styled.div`
-  background-color: white;
+  background-color: #f0f0f0;
   border: 1px solid #ccc;
   border-radius: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;

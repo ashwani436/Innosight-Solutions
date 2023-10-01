@@ -11,6 +11,7 @@ import tata from '../assets/association/Tata-Motors-Logo.png';
 
 const AssociationStyle = styled.div`
 .marquee {
+  /* background-color: aliceblue; */
   width: 100%;
   margin-bottom: 10px;
   overflow: hidden;
@@ -53,9 +54,9 @@ function Association() {
         <div>
           <img src={gaurs} />
         </div>
-        <div>
+        {/* <div>
           <img src={tata} />
-        </div>
+        </div> */}
         <div>
         <img src={m3m} />
         </div>

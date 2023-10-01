@@ -2,30 +2,6 @@ import img from '../assets/association/facebook.png'
 
 export const Data = [
   {
-    tabkey: "leadership",
-    name: "Anshul Gupta",
-    designation: "CEO, Co-Founder",
-    img: img,
-  },
-  {
-    tabkey: "leadership",
-    name: "Tushar Bhargava",
-    designation: "Co-Founder, Head Legal",
-    img: img,
-  },
-  {
-    tabkey: ["leadership", "engineering"],
-    name: "Angsuman Ray",
-    designation: "CTO",
-    img: img,
-  },
-  {
-    tabkey: "engineering",
-    name: "Vishal Dhiman",
-    designation: "Engineering Manager (IPSuite)",
-    img: img,
-  },
-  {
     tabkey: "engineering",
     name: "Wasique Ansari",
     designation: "SDE II (Backend)",
@@ -49,6 +25,4 @@ export const Data = [
     designation: "SDE I (Backend)",
     img: img
   },
-
-
 ];

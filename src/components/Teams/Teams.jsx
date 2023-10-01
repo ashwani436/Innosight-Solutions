@@ -14,7 +14,7 @@ function Teams() {
                 Data.map((val,index)=>{
                   return (
                     <div className="col-lg-3 col-6 mb-4 team-members">
-                    <div className="card">
+                    <div className="card" style={{backgroundColor:'aliceblue'}}>
                         <img key={index} src={val.img} className="card-img-top image p-2" alt={val.name} />
                       <div className="card-body">
                         <h6 className='name'>{val.name}</h6>

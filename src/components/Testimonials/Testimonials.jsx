@@ -20,21 +20,21 @@ class Testimonials extends Component {
       tablet: { breakpoint: { max: 1024, min: 464 }, items: 1 }
     };
     
-    const CustomRight = ({ onClick }) => (
-      <button className="arrow right" onClick={onClick} >
-            <img src={rightarrow} alt="no-arrow" style={{backgroundColor:'white'}} />
-      </button>
-    );
-    const CustomLeft = ({ onClick }) => (
-      <button className="arrow left" onClick={onClick} >
-        <img src={leftarrow} alt="no-arrow" style={{backgroundColor:'white'}}/>
-      </button>
-    );
+    // const CustomRight = ({ onClick }) => (
+    //   <button className="arrow right" onClick={onClick} >
+    //         <img src={rightarrow} alt="no-arrow" style={{backgroundColor:'white'}} />
+    //   </button>
+    // );
+    // const CustomLeft = ({ onClick }) => (
+    //   <button className="arrow left" onClick={onClick} >
+    //     <img src={leftarrow} alt="no-arrow" style={{backgroundColor:'white'}}/>
+    //   </button>
+    // );
 
     return (
       // <!-- Main Carousel Section Start -->
       <TestimonialWrapper>
-      <div id="main-slide" className="carousel slide mt-5 mb-5 " data-ride="carousel">
+      <div id="main-slide" className="carousel slide mt-5 mb-5 " data-ride="carousel" style={{backgroundColor:'#fae7cb'}}>
         <div className="carousel-inner">
             <Carousel
             autoPlay
@@ -58,19 +58,22 @@ class Testimonials extends Component {
             // customRightArrow={<CustomRight />}
             // customLeftArrow={<CustomLeft />}
             >
-            <div className="container mt-5">
+            <div className="container mt-5 mb-5">
               <div className="row">
               <div className="col-lg-4 col-md-12 col-sm-12">
               
                 
-             <div className="right-text col-8 border border-warning p-5">
+              <div className="right-text col-8 border border-warning p-5">
+                <div className="quotation-mark fs-4">“</div>
               <p className="fs-6">Docusieve has helped us achieve: more elegant
                                    as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
               
-              <div className="author-container mt-5">
+              <div className="author-container mt-3">
                 <p className="author">Siddharth Raja</p>
                 <p className="partner">Partner at Saakshya</p>
+                
                 </div>
+                <div className="quotation-mark-reverse fs-4">“</div>
               </div>
                   </div>
                    
@@ -78,14 +81,17 @@ class Testimonials extends Component {
               <div className="col-lg-4 col-md-12 col-sm-12">
               
                 
-            <div className="right-text col-8 border border-warning p-5">
+              <div className="right-text col-8 border border-warning p-5">
+                <div className="quotation-mark fs-4">“</div>
               <p className="fs-6">Docusieve has helped us achieve: more elegant
                                    as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
               
-              <div className="author-container mt-5">
+              <div className="author-container mt-3">
                 <p className="author">Siddharth Raja</p>
                 <p className="partner">Partner at Saakshya</p>
+                
                 </div>
+                <div className="quotation-mark-reverse fs-4">“</div>
               </div>
                   </div>
 
@@ -93,14 +99,17 @@ class Testimonials extends Component {
               <div className="col-lg-4 col-md-12 col-sm-12">
               
                 
-             <div className="right-text col-8 border border-warning p-5">
+              <div className="right-text col-8 border border-warning p-5">
+                <div className="quotation-mark fs-4">“</div>
               <p className="fs-6">Docusieve has helped us achieve: more elegant
                                    as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
               
-              <div className="author-container mt-5">
+              <div className="author-container mt-3">
                 <p className="author">Siddharth Raja</p>
                 <p className="partner">Partner at Saakshya</p>
+                
                 </div>
+                <div className="quotation-mark-reverse fs-4">“</div>
               </div>
               </div>
             </div>
@@ -111,14 +120,17 @@ class Testimonials extends Component {
               <div className="col-lg-4 col-md-12 col-sm-12">
               
                 
-            <div className="right-text col-8 border border-warning p-5">
+              <div className="right-text col-8 border border-warning p-5">
+                <div className="quotation-mark fs-4">“</div>
               <p className="fs-6">Docusieve has helped us achieve: more elegant
                                    as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
               
-              <div className="author-container mt-5">
+              <div className="author-container mt-3">
                 <p className="author">Siddharth Raja</p>
                 <p className="partner">Partner at Saakshya</p>
+                
                 </div>
+                <div className="quotation-mark-reverse fs-4">“</div>
               </div>
                   </div>
                    
@@ -126,14 +138,17 @@ class Testimonials extends Component {
               <div className="col-lg-4 col-md-12 col-sm-12">
               
                 
-                <div className="right-text col-8 border border-warning p-5">
+              <div className="right-text col-8 border border-warning p-5">
+                <div className="quotation-mark fs-4">“</div>
               <p className="fs-6">Docusieve has helped us achieve: more elegant
                                    as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
               
-              <div className="author-container mt-5">
+              <div className="author-container mt-3">
                 <p className="author">Siddharth Raja</p>
                 <p className="partner">Partner at Saakshya</p>
+                
                 </div>
+                <div className="quotation-mark-reverse fs-4">“</div>
               </div>
                   </div>
 
@@ -141,14 +156,17 @@ class Testimonials extends Component {
               <div className="col-lg-4 col-md-12 col-sm-12">
               
                 
-               <div className="right-text col-8 border border-warning p-5">
+              <div className="right-text col-8 border border-warning p-5">
+                <div className="quotation-mark fs-4">“</div>
               <p className="fs-6">Docusieve has helped us achieve: more elegant
                                    as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
               
-              <div className="author-container mt-5">
+              <div className="author-container mt-3">
                 <p className="author">Siddharth Raja</p>
                 <p className="partner">Partner at Saakshya</p>
+                
                 </div>
+                <div className="quotation-mark-reverse fs-4">“</div>
               </div>
               </div>
             </div>
@@ -157,30 +175,36 @@ class Testimonials extends Component {
                <div className="container mt-5">
               <div className="row">
               <div className="col-lg-4 col-md-12 col-sm-12">
-              
-               <div className="right-text col-8 border border-warning p-5">
+              <div className="right-text col-8 border border-warning p-5">
+                <div className="quotation-mark fs-4">“</div>
               <p className="fs-6">Docusieve has helped us achieve: more elegant
                                    as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
               
-              <div className="author-container mt-5">
+              <div className="author-container mt-3">
                 <p className="author">Siddharth Raja</p>
                 <p className="partner">Partner at Saakshya</p>
+                
                 </div>
+                <div className="quotation-mark-reverse fs-4">“</div>
               </div>
+
                   </div>
                    
                   
               <div className="col-lg-4 col-md-12 col-sm-12">
               
                 
-                <div className="right-text col-8 border border-warning p-5">
+              <div className="right-text col-8 border border-warning p-5">
+                <div className="quotation-mark fs-4">“</div>
               <p className="fs-6">Docusieve has helped us achieve: more elegant
                                    as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
               
-              <div className="author-container mt-5">
+              <div className="author-container mt-3">
                 <p className="author">Siddharth Raja</p>
                 <p className="partner">Partner at Saakshya</p>
+                
                 </div>
+                <div className="quotation-mark-reverse fs-4">“</div>
               </div>
                   </div>
 
@@ -188,14 +212,17 @@ class Testimonials extends Component {
               <div className="col-lg-4 col-md-12 col-sm-12">
               
                 
-                 <div className="right-text col-8 border border-warning p-5">
+              <div className="right-text col-8 border border-warning p-5">
+                <div className="quotation-mark fs-4">“</div>
               <p className="fs-6">Docusieve has helped us achieve: more elegant
                                    as a result, greater value additions in the <span className="heighligted-text"> quality of our work</span> for the benefit of our clients.</p>
               
-              <div className="author-container mt-5">
+              <div className="author-container mt-3">
                 <p className="author">Siddharth Raja</p>
                 <p className="partner">Partner at Saakshya</p>
+                
                 </div>
+                <div className="quotation-mark-reverse fs-4">“</div>
               </div>
               </div>
             </div>
@@ -212,6 +239,20 @@ export default Testimonials;
 
 
 const TestimonialWrapper=styled.div`
+.quotation-mark-reverse{
+  font-size: 7rem; /* Adjust the size as needed */
+  color: #f6d770; /* Color of the quotation marks */
+  transform: rotate(180deg); /* Rotate the quotation mark 180 degrees */
+  display: inline-block;
+  margin-right: 0.5rem; 
+}
+.quotation-mark {
+  font-size: 7rem; /* Adjust the size as needed */
+  color: #f6d770; /* Color of the quotation marks */
+  
+  display: inline-block;
+  margin-right: 0.5rem; /* Adjust spacing from the text */
+}
 
 .arrow {
     position:absolute;
@@ -222,6 +263,7 @@ const TestimonialWrapper=styled.div`
     right:200px;
   }
   .text{
+   
   font-family:Circular Std;
 font-style: normal;
 font-weight: 500;
@@ -237,17 +279,24 @@ font-size: 24px;
       
   }
 .right-text{
+  background-color: #f5f5f5;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 font-family:Circular Std;
 font-style: normal;
 font-weight: 500;
 font-size: 28px;
-line-height: 125%;
+line-height: 115%;
   }
 
 .heighligted-text{
   color:#0066FF;
 }
   .author-container{
+    /* margin-top: 10px !important; */
     display:flex;
     flex-direction:column;
     line-height:10px;

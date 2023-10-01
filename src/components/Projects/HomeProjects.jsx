@@ -43,15 +43,15 @@ function HomeProjects() {
       <div className="property m-2 wow animate__fadeInRight" data-wow-duration="2s">
         <FormContainer>
         <Form action="#" method="POST">
-          <Label htmlFor="name">Name:</Label>
+          <Label htmlFor="name">Name</Label>
           <Input type="text" id="name" name="name" required />
           <br />
 
-          <Label htmlFor="phone">Phone:</Label>
+          <Label htmlFor="phone">Phone</Label>
           <Input type="tel" id="phone" name="phone" required />
           <br />
 
-          <Label htmlFor="address">Address:</Label>
+          <Label htmlFor="address">Address</Label>
           <TextArea id="address" name="address" rows="4" required></TextArea>
           <br />
 
@@ -66,14 +66,18 @@ function HomeProjects() {
   )
 }
 
-export default HomeProjects;const FormContainer = styled.div`
-  background-color: #fff;
+export default HomeProjects;
+
+
+const FormContainer = styled.div`
+  background-color: #889ab3;
+  color: white;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 20px;
   width: 300px;
   margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 `;
 
 const Form = styled.form`
@@ -84,32 +88,63 @@ const Label = styled.label`
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
+  font-size: 18px;
 `;
 
 const Input = styled.input`
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 2px solid #555;
   border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    outline: none;
+    border-color: #ff5722; /* Highlight border color on focus */
+  }
 `;
 
 const TextArea = styled.textarea`
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  resize:none;
-  border: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 2px solid #555;
   border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    outline: none;
+    border-color: #ff5722; /* Highlight border color on focus */
+  }
 `;
 
 const SubmitButton = styled.input`
-  background-color: #333;
+  background-color: #ff5722;
   color: #fff;
-  padding: 10px 20px;
+  padding: 8px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #e64a19; /* Darker color on hover */
+  }
 `;
+
+// export {
+//   FormContainer,
+//   Form,
+//   Label,
+//   Input,
+//   TextArea,
+//   SubmitButton
+// };
+
 
 
